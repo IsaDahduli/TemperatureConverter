@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity()
 {
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         val etCelsius = findViewById<EditText>(R.id.et_celsius)
         val etFahrenheit = findViewById<EditText>(R.id.et_fahrenheit)
