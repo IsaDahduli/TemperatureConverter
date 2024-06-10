@@ -60,9 +60,10 @@ class MainActivity : AppCompatActivity()
             etFahrenheit.text.clear()
             etKelvin.text.clear()
 
+            etFahrenheit.isEnabled = true
             etCelsius.isEnabled = true
             etKelvin.isEnabled = true
-            etFahrenheit.isEnabled = true
+
             }
         }
 }
